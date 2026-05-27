@@ -10,7 +10,10 @@ Rules-Requires-Root: no
 Package: halos-desktop
 Architecture: all
 Depends: ${misc:Depends},
-         halos
+         halos,
+         halos-desktop-wallpaper
 Description: HaLOS desktop variant metapackage
  This metapackage marks a HaLOS installation as a desktop variant.
- Future desktop-specific packages will be added as dependencies.
+ Pulls in a HaLOS-branded default wallpaper via the virtual package
+ halos-desktop-wallpaper, satisfied by either halos-desktop-branding
+ (generic) or halos-halpi-desktop-branding (HALPI2).
