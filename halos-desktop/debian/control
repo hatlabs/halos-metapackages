@@ -11,9 +11,13 @@ Package: halos-desktop
 Architecture: all
 Depends: ${misc:Depends},
          halos,
-         halos-desktop-wallpaper
+         halos-desktop-wallpaper,
+         halos-browser-trust
 Description: HaLOS desktop variant metapackage
  This metapackage marks a HaLOS installation as a desktop variant.
  Pulls in a HaLOS-branded default wallpaper via the virtual package
  halos-desktop-wallpaper, satisfied by either halos-desktop-branding
  (generic) or halos-halpi-desktop-branding (HALPI2).
+ .
+ Also pulls in halos-browser-trust so the on-device browser trusts the
+ device's own CA (the system p11-kit trust store) with no manual steps.
